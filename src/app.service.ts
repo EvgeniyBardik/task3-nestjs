@@ -3,6 +3,6 @@ import { Injectable } from "@nestjs/common";
 @Injectable()
 export class AppService {
   getHello(): string {
-    return "Task 3 for Radency<hr><br>Fields of table:<br><br>name: string<br>category: string<br>content: string<br>active: boolean<br>date?: string<br><br>POST /notes Create a note<br>DELETE /notes/:id Remove note<br>PATCH /notes/:id Edit note<br>GET /notes/:id Retrieve note<br>/notes Get all notes<br> /notes/stats Get aggregate amount of notes";
+    return "Task 3 for Radency<hr><br>Fields of table:<br><br>name: string<br>category: string<br>content: string<br>active: boolean<br>date?: string<br><br>/notes - Create a note (POST)<br>/notes/:id - Remove note (DELETE)<br>/notes/:id - Edit note (PATCH)<br>/notes/:id - Retrieve note (GET)<br>/notes - Get all notes (GET)<br>/notes/stats - Get aggregate amount of notes (GET)";
   }
 }
